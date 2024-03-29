@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/alpha"/>
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/beta"/>
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
